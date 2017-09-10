@@ -35,4 +35,10 @@ The modified census dataset consists of approximately 32,000 data points, with e
 
 ### Conclusion
 
+The raw data contains two features `capital-loss` and `capital-gain` that are highly skewed and are corrected by `log` function. There are also 8 categorical features that are transformed with `one-hot-encoding`. 
+
+In this case, since false positives of the model is more detrimental than false negatives, F-beta score with beta = 0.5 is used as the metric.
+
 After applying supervised learning algorithms on the data, I found that `capital-loss`, `capital-gain`, `age`, `hours-per-week`, and `education-num` are the most relevant features in predicting if outcome is `>= $50,000` for an individual. 
+
+Gradient Boosting Model performs better classification than the naive benchmark model. And that using just the top 5 most important features to train the model could do as well as using the full data with 103 features.
