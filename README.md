@@ -32,3 +32,7 @@ The modified census dataset consists of approximately 32,000 data points, with e
 
 **Target Variable**
 - `income`: Income Class (<=50K, >50K)
+
+### Conclusion
+
+After applying supervised learning algorithms on the data, I found that `capital-loss`, `capital-gain`, `age`, `hours-per-week`, and `education-num` are the most relevant features in predicting if outcome is `>= $50,000` for an individual. 
